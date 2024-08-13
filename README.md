@@ -1,2 +1,3 @@
 ## iqneet.github.io
-https://iqneet.github.io/
+
+link:https://iqneet.github.io/
