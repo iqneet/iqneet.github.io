@@ -1,2 +1,2 @@
 ## iqneet.github.io
-hello
+https://iqneet.github.io/
