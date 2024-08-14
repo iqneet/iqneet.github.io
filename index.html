@@ -1,17 +1,62 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="jaß">
 
 <head>
   <meta charset="utf-8">
-  <title>test</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link ref="stylesheet" href="style.css">
+  <title>Home</title>
 
 </head>
 
 <body>
+  <!--普段使いのショートカット-->
+  <h1>iqneet -ショートカットlink- </h1>
+  <div id="MainMenu" class="MainMenu">    
+    <div class="buttons">
+      
+      <!-- youtube -->
+      <botton type="botton" class="btn-square" 
+      style="background: linear-gradient(225deg, #ff0000, #ff0000 20%,  #d7d7d7 25%, #d7d7d7); color:#181818"
+      onclick="location.href='https://youtube.com/'"> Youtube </botton>
+      
+      <p></p>
 
-  <!-- test_comment -->
-  <p>Hello world! This is test</p>
+      <!-- twitch -->
+      <botton type="botton" class="btn-square" 
+      style="background: linear-gradient(225deg, #e100ff, #e100ff 20%,  #d7d7d7 25%, #d7d7d7); color:#181818"
+      onclick="location.href='https://twitch.tv/'"> Twitch </botton>
 
+      <p></p>
+
+      <!--x(Twitter)-->
+      <botton type="botton" class="btn-square" 
+      style="background: linear-gradient(225deg, #387fff, #387fff 20%,  #d7d7d7 25%, #d7d7d7); color:#181818"
+      onclick="location.href='https://twitter.com/'"> x </botton> 
+      
+      <p></p>
+
+    </div>
+  </div>
+
+  <!--カレンダー-->
+  <h1>カレンダー</h1>  
+  <div>
+    <!--今日の日付オートセット-->    
+    <script>
+      var today = new Date();
+      today.setDate(today.getDate());
+      var yyyy = today.getFullYear();
+      var mm = ("0"+(today.getMonth()+1)).slice(-2);
+      var dd = ("0"+today.getDate()).slice(-2);
+      document.getElementById("today").value=yyyy+'-'+mm+'-'+dd;
+      
+      </script>    
+    <input type="date" name="today" id="today">
+    <p></p>
+
+  </div>
+  
 </body>
-
 </html>
