@@ -8,65 +8,65 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-  <link ref="stylesheet" href="css/styles.css">
-
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- href="https://iqneet.github.io/iqneet.github.io/css/styles.css" -->
   <title> Home | iqneet </title>
 
 </head>
 
 <body>
-  <!--普段使いのショートカット-->
-  <h1> ポータル </h1>
-  <div id="MainMenu" class="MainMenu">    
-    <div class="buttons">
-      
-      <!-- youtube -->
-      <botton type="botton" class="btn-square" 
-      style="background: linear-gradient(225deg, #ff0000, #ff0000 20%,  #d7d7d7 25%, #d7d7d7); color:#181818"
-      onclick="location.href='https://youtube.com/'"> Youtube </botton>
-      
-      <p></p>
-      
-      <!-- 
-      <a href="https://youtube.com/">Youtube</a>
-      <p></p>
-      -->
+  
+  <div class="category-Portal">  
+    <h1> ポータル </h1>
+    <div id="MainMenu" class="MainMenu">  
 
-      <!-- twitch -->
-      <botton type="botton" class="btn-square" 
-      style="background: linear-gradient(225deg, #e100ff, #e100ff 20%,  #d7d7d7 25%, #d7d7d7); color:#181818"
-      onclick="location.href='https://twitch.tv/'"> Twitch </botton>
+      <!-- Portal -->
+      <div class="Portal">
 
-      <p></p>
+        <!-- youtube -->
+        <div class="Portal-block" id = "Portal-Youtube-block">
+          <a href='https://youtube.com/'> Youtube </a>
+        </div>
 
-      <!--x(Twitter)-->
-      <botton type="botton" class="btn-square" 
-      style="background: linear-gradient(225deg, #387fff, #387fff 20%,  #d7d7d7 25%, #d7d7d7); color:#181818"
-      onclick="location.href='https://twitter.com/'"> Twitter </botton> 
+        <!-- twitch -->
+        <div class="Portal-block" id = "Portal-Twitch-block">
+          <a href='https://twitch.tv/'> Twitch </a>
+        </div>
+          
+        <!--x(Twitter)-->
+        <div class="Portal-block" id = "Portal-Twitter-block">
+          <a href='https://twitter.com/'> X </a>
+        </div>
+
+      </div>
       
-      <p></p>
+      <p>　</p>
+      <hr>
 
     </div>
-  </div>
 
-  <!--カレンダー-->
-  <h1>カレンダー</h1>  
-  <div class="packages" id="packages">
-    <!--今日の日付オートセット-->    
-    <script>
-      var today = new Date();
-      today.setDate(today.getDate());
-      var yyyy = today.getFullYear();
-      var mm = ("0"+(today.getMonth()+1)).slice(-2);
-      var dd = ("0"+today.getDate()).slice(-2);
-      document.getElementById("today").value=yyyy+'-'+mm+'-'+dd;
+
+  <div class="category-calendar">  
+    <h1>カレンダー</h1>  
+    <div class="packages" id="packages">
       
-      </script>    
-    <input type="date" value="today" name="today" id="today">
-    <p></p>
-    <hr>
+      <!-- カレンダー -->    
+      <input type="date" value="today" name="today" id="today">
 
-  </div>
+      <!--今日の日付オートセット-->    
+      <script>
+        var today = new Date();
+        today.setDate(today.getDate());
+        var yyyy = today.getFullYear();
+        var mm = ("0"+(today.getMonth()+1)).slice(-2);
+        var dd = ("0"+today.getDate()).slice(-2);
+        document.getElementById("today").value=yyyy+'-'+mm+'-'+dd;
+        
+      </script>
+
+      <hr>
+
+    </div>
   
 </body>
 </html>

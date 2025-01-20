@@ -1,68 +1,105 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
 
-body{
+body
+{
+
 	background: linear-gradient(#2d2d2d, #1a1a1a) fixed;
 	/*background: linear-gradient(#242444, #040424) fixed;*/
 	font-family: 'Quicksand', sans-serif;
 	color: #FFFFFF;
 	/*text-align: center;*/
+	
 }
 
-h1{
-	
+h1
+{
+	font-family: 'Kosugi Maru', 'Hiragino Maru Gothic Pro', 'Rounded M+ 1c', sans-serif;
 	font-weight: normal;
-	font-size: 140px;
+	font-size: 100px;
 	text-shadow: 0px 0px 30px #00000080;
-	text-align: center;
+	/*text-align: center;*/
 
 }
 
-p{
+p
+{
 	
-	font-family: -apple-system, Sans-Serif;
+	font-family: "apple-system", Sans-Serif;
 	font-weight: 150;
 	font-size: 40px;
 	margin-top: 10px;
 
 }
 
-.MainMenu{
-	
+.Portal
+{
+
 	background-color: #373737;
+	font-size: 60px;
 	margin-left: 40px;
 	margin-right: 40px;
 	border-radius: 75px;
-	
+	display: flex;
+
 }
 
-.buttons{
+.Portal-block
+{
 
+	flex: 1; /* 各要素が均等に幅を取る */
+    min-width: 150px; /* 最小幅を設定 */
+	margin: 10px;
+    padding: 10px;
+    box-sizing: border-box; /* パディングとボーダーを含めて幅を計算 */
 	text-align: center;
 
 }
 
-.btn-square{
+#Portal-Youtube-block a,
+#Portal-Youtube-block a:visited, /* 訪問済みリンク */
+#Portal-Youtube-block a:hover, /* ホバー時のリンク */
+#Portal-Youtube-block a:active /* アクティブ時のリンク */
+{
 
-	font-family: Quicksand;
-	color: #181818;
-	width: 60vw;
-	height: 100px;
-	font-size: 50px;
-	border-radius: 25px;
-	box-shadow: 0px 0px 30px #00000080;
-	border-width: 0px;
-	margin-top: 60px;
-	margin-bottom: 60px;
-	text-shadow: 0px 0px 30px #00000080;
+	color: #ff0000;
+    text-decoration: none; /* 下線を消す場合 */
 	
 }
 
-.packages{
+#Portal-Twitch-block a, 
+#Portal-Twitch-block a:visited,
+#Portal-Twitch-block a:hover,
+#Portal-Twitch-block a:active
+{
 
-	margin-left: 20px;
-	margin-right: 30px;
+	color: #8c00ff;
+    text-decoration: none; /* 下線を消す場合 */
+
+}
+
+#Portal-Twitter-block a, 
+#Portal-Twitter-block a:visited,
+#Portal-Twitter-block a:hover, 
+#Portal-Twitter-block a:active 
+{
+
+	color: #00ffff;
+    text-decoration: none; /* 下線を消す場合 */
+
+}
+
+.category-calendar
+{
+
 	padding-top: 50px;
 	padding-bottom: 50px;
-	text-align: left;
 
+}
+
+.packages input[type="date"]
+{
+	font-size: 60px;
+	text-align: center;
+	size: 100px;
 }
