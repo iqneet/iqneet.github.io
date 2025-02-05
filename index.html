@@ -9,7 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <!-- href="https://iqneet.github.io/iqneet.github.io/css/styles.css" -->
+
+  <!-- href="https://iqneet.github.io/iqneet.github.io/css/styles.css"> -->
+
   <title> Home | iqneet </title>
 
 </head>
@@ -39,34 +41,34 @@
         </div>
 
       </div>
-      
+
       <p>　</p>
       <hr>
-
-    </div>
+  </div>
+  
+</div>
 
 
   <div class="category-calendar">  
     <h1>カレンダー</h1>  
+
     <div class="packages" id="packages">
       
       <!-- カレンダー -->    
       <input type="date" value="today" name="today" id="today">
 
-      <!--今日の日付オートセット-->    
-      <script>
-        var today = new Date();
-        today.setDate(today.getDate());
-        var yyyy = today.getFullYear();
-        var mm = ("0"+(today.getMonth()+1)).slice(-2);
-        var dd = ("0"+today.getDate()).slice(-2);
-        document.getElementById("today").value=yyyy+'-'+mm+'-'+dd;
-        
-      </script>
-
-      <hr>
-
     </div>
-  
+      <!--今日の日付オートセット-->
+    <script>
+      var today = new Date();
+      today.setDate(today.getDate());
+      var yyyy = today.getFullYear();
+      var mm = ("0"+(today.getMonth()+1)).slice(-2);
+      var dd = ("0"+today.getDate()).slice(-2);
+      document.getElementById("today").value=yyyy+'-'+mm+'-'+dd;
+      
+    </script>
+  </div>
+
 </body>
 </html>

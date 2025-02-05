@@ -3,7 +3,6 @@
 
 body
 {
-
 	background: linear-gradient(#2d2d2d, #1a1a1a) fixed;
 	/*background: linear-gradient(#242444, #040424) fixed;*/
 	font-family: 'Quicksand', sans-serif;
@@ -24,7 +23,6 @@ h1
 
 p
 {
-	
 	font-family: "apple-system", Sans-Serif;
 	font-weight: 150;
 	font-size: 40px;
@@ -34,7 +32,6 @@ p
 
 .Portal
 {
-
 	background-color: #373737;
 	font-size: 60px;
 	margin-left: 40px;
@@ -46,7 +43,6 @@ p
 
 .Portal-block
 {
-
 	flex: 1; /* 各要素が均等に幅を取る */
     min-width: 150px; /* 最小幅を設定 */
 	margin: 10px;
@@ -61,7 +57,6 @@ p
 #Portal-Youtube-block a:hover, /* ホバー時のリンク */
 #Portal-Youtube-block a:active /* アクティブ時のリンク */
 {
-
 	color: #ff0000;
     text-decoration: none; /* 下線を消す場合 */
 	
@@ -72,7 +67,6 @@ p
 #Portal-Twitch-block a:hover,
 #Portal-Twitch-block a:active
 {
-
 	color: #8c00ff;
     text-decoration: none; /* 下線を消す場合 */
 
@@ -83,7 +77,6 @@ p
 #Portal-Twitter-block a:hover, 
 #Portal-Twitter-block a:active 
 {
-
 	color: #00ffff;
     text-decoration: none; /* 下線を消す場合 */
 
@@ -91,7 +84,6 @@ p
 
 .category-calendar
 {
-
 	padding-top: 50px;
 	padding-bottom: 50px;
 
